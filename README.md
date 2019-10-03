@@ -1,4 +1,9 @@
 # zen3-ui
-npm i
-ng serve
-Make sure to run nodejs server
+**Prerequisites**
+****
+- Install Nodejs(v10.0)
+- Clone this repository
+- Go to zen3-ui folder
+- npm i
+- npm start
+- http://localhost:4200
