@@ -1,0 +1,19 @@
+<h3>Create User</h3> 
+
+<table border=1>
+  <tr><td>Name:</td><td><input #name /></td></tr>
+  <tr><td>Type:</td><td><input #type /></td></tr>
+  <tr><td>Favorite:</td><td><input #favorite /></td></tr>
+  <tr><td colspan="2" style='padding-left: 77px;'><button (click)="add(name.value,type.value,favorite.value); heroName.value=''">Add</button></td></tr>
+</table>
+<br>
+
+<h3>Users</h3> 
+ <table class="table" border=1>
+   <tr><th>Id</th><th>Name</th><th>Favorite</th><th>Type</th><th>Action</th></tr>
+   <tr *ngFor="let hero of users"><td><a>{{hero.id}}</a></td>
+    <td>{{hero.name}}</td><td>{{hero.favorite}} </td><td>{{hero.type}}</td><td>
+        <a routerLink="/detail/{{hero.id}}">update </a> <a (click)="delete(hero)">delete</a></td></tr>
+ </table> 
+  
+
